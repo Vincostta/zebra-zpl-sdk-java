@@ -1,0 +1,23 @@
+### Zebra SDK Custom Rules ###
+
+# 1. Não subir o histórico de impressões (pode conter dados sensíveis/IPs)
+print_history.csv
+
+# 2. Ignorar todos os arquivos de imagem por padrão (evita lixo de teste)
+*.png
+*.jpg
+*.jpeg
+label_preview/
+
+# 3. ABRIR EXCEÇÃO para a pasta de imagens do README
+# Isso garante que a foto da vitrine apareça no GitHub
+!images/
+!images/*.png
+!images/*.jpg
+
+# 4. Ignorar arquivos de log temporários e configurações locais
+*.log
+config.properties
+
+# 5. Ignorar arquivos do sistema MacOS (já que você usa MacBook)
+.DS_Store
